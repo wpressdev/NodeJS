@@ -51,6 +51,8 @@ function onError(error) {
     }
 }
 
+app.set('port', (process.env.PORT || 5000));
+
 function onListening() {
     var addr = server.address();
     var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
@@ -220,6 +222,10 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
 
 module.exports = app;
