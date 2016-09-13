@@ -2,6 +2,11 @@
   "name": "feedback",
   "version": "0.0.0",
   "private": true,
+  "description": "Node.js app to get feedbacks",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "app.js",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -24,5 +29,16 @@
     "password-hash": "^1.2.2",
     "serve-favicon": "~2.3.0",
     "squel": "^5.4.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpressdev/nodejs-feedback"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
+
