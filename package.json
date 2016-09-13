@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wpressdev/nodejs-feedback"
+    "url": "https://git.heroku.com/nodejs-feedback.git"
   },
   "keywords": [
     "node",
